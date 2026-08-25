@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virginia Bill Watch</title>
+<meta name="description" content="A plain-English report every morning of the session. Every bill, every vote, every member, compiled from the state's own legislative feed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%230d1420'/%3E%3Cpath d='M7.5 14.6 L11.5 18.6 L21 8.6' fill='none' stroke='%23c8a04a' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg width="27" height="27" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <line x1="7" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="7" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M7.5 19.2 L11 22.4 L21.6 11.2" fill="none" stroke="#c8a04a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p class="wordmark">Virginia Bill Watch</p>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="data.html">The Data</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html" class="nav-hide">About</a>
+      <a href="mailto:rich@vabillwatch.com" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div>
+        <p class="eyebrow" data-reveal style="--d:0">Virginia General Assembly &middot; 2027 session</p>
+        <h1 data-reveal style="--d:1">We read the Virginia General Assembly so you don&rsquo;t have to.</h1>
+        <p class="lede" data-reveal style="--d:2">Every bill, every vote, every member. Just the data.</p>
+
+        <div class="hero-actions" data-reveal style="--d:3">
+          <a class="button" href="data.html">See what lands in your inbox
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="button button--ghost" href="pricing.html">See the pricing</a>
+        </div>
+
+        <div class="countdown countdown--big" data-reveal style="--d:4">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="countdown-days" data-gavel="2027-01-13T12:00:00-05:00" role="timer">
+            <span class="tick-cell"><b data-t="d">&nbsp;</b><i>days</i></span>
+            <span class="tick-sep" aria-hidden="true">:</span>
+            <span class="tick-cell"><b data-t="h">&nbsp;</b><i>hrs</i></span>
+            <span class="tick-sep" aria-hidden="true">:</span>
+            <span class="tick-cell"><b data-t="m">&nbsp;</b><i>min</i></span>
+            <span class="tick-sep" aria-hidden="true">:</span>
+            <span class="tick-cell"><b data-t="s">&nbsp;</b><i>sec</i></span>
+            <span class="tick-caption">until the session convenes<br>January 13, 2027, noon</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="votecard" data-reveal style="--d:3">
+        <div class="votecard-head">
+          <strong>HB888 &middot; 2026</strong>
+          <span>Off-street parking requirements</span>
+        </div>
+
+        <div class="vote-block">
+          <div class="vb-top">
+            <span class="vb-where">House floor &middot; February 5</span>
+            <span class="vb-tally">61-37</span>
+          </div>
+          <div class="wall wall--big" data-yea="61" data-nay="37" role="img"
+               aria-label="House floor vote: 61 yea, 37 nay"></div>
+        </div>
+
+        <div class="vote-block is-decisive">
+          <div class="vb-top">
+            <span class="vb-where">Senate Local Government &middot; March 2</span>
+            <span class="vb-tally">8-7</span>
+          </div>
+          <div class="wall wall--small" data-yea="8" data-nay="7" role="img"
+               aria-label="Senate Local Government committee vote: 8 yea, 7 nay"></div>
+        </div>
+
+        <p class="vote-note">Thirteen recorded votes carried this bill into law.
+          <b>The one that decided it had fifteen people in the room.</b></p>
+
+        <div class="vote-key">
+          <span><i style="background:#45936d" aria-hidden="true"></i>Yea</span>
+          <span><i style="background:#c2564a" aria-hidden="true"></i>Nay</span>
+          <span>Source: Virginia Legislative Information System</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper band--tight">
+  <div class="wrap">
+    <div class="stats" data-reveal>
+      <div class="stat"><b data-count="2366">2,366</b><span>bills filed in the 2026 regular session</span></div>
+      <div class="stat"><b data-count="31398">31,398</b><span>recorded votes on bills, 2023 to 2026</span></div>
+      <div class="stat"><b data-count="1612543">1,612,543</b><span>individual legislator votes compiled</span></div>
+      <div class="stat"><b data-count="221">221</b><span>legislators with a voting record on file</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper" style="padding-top:24px">
+  <div class="wrap">
+
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">One bill, thirteen votes</p>
+      <h2>What that looks like for a single bill.</h2>
+      <p>HB888 changed what localities can require for off-street parking. It became
+      law in 2026. Along the way it was voted on thirteen separate times. The floor
+      votes were not close. The vote that decided it was.</p>
+    </div>
+
+    <div class="ledger" data-reveal>
+      <div class="ledger-head">
+        <strong>HB888 (2026) &middot; Minimum off-street parking requirements</strong>
+        <span>Chief patron: Irene Shin &middot; Became law, Chapter 1075</span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Jan 30</span>
+        <span class="l-where">House Subcommittee #1</span>
+        <span class="l-what">Recommends reporting with substitute</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:75%"></i><i class="n" style="--w:25%"></i></span><span class="l-num">6-2</span></span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Jan 30</span>
+        <span class="l-where">House Counties, Cities and Towns</span>
+        <span class="l-what">Reported with substitute</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:71.4%"></i><i class="n" style="--w:28.6%"></i></span><span class="l-num">15-6</span></span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Feb 5</span>
+        <span class="l-where">House floor</span>
+        <span class="l-what">Read third time and passed House</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:62.2%"></i><i class="n" style="--w:37.8%"></i></span><span class="l-num">61-37</span></span>
+      </div>
+
+      <div class="lrow is-decisive">
+        <span class="l-date">Mar 2</span>
+        <span class="l-where">Senate Local Government <span class="l-flag">Decided it</span></span>
+        <span class="l-what">Reported with substitute</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:53.3%"></i><i class="n" style="--w:46.7%"></i></span><span class="l-num">8-7</span></span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Mar 9</span>
+        <span class="l-where">Senate floor</span>
+        <span class="l-what">Passed Senate with substitute</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:52.5%"></i><i class="n" style="--w:47.5%"></i></span><span class="l-num">21-19</span></span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Mar 10</span>
+        <span class="l-where">House floor</span>
+        <span class="l-what">Senate substitute agreed to by House</span>
+        <span class="l-vote"><span class="bar"><i class="y" style="--w:62.6%"></i><i class="n" style="--w:37.4%"></i></span><span class="l-num">62-37</span></span>
+      </div>
+
+      <div class="lrow">
+        <span class="l-date">Apr 22</span>
+        <span class="l-where">Both chambers</span>
+        <span class="l-what">Concurred in the Governor&rsquo;s recommendation</span>
+        <span class="l-vote"><span class="l-num">62-38 &middot; 21-18</span></span>
+      </div>
+
+      <p class="ledger-note">Eight senators to seven, on a Monday in March, decided a
+      law that applies to every parking lot in the Commonwealth. That committee vote
+      is public. It is also the kind of thing nobody tells you about until the bill is
+      already law. Source: Virginia Legislative Information System, the state&rsquo;s own
+      feed. Six other roll calls on this bill, all procedural, are left out of this
+      table for space.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="band band--panel">
+  <div class="wrap">
+
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What you get</p>
+      <h2>A charter, a morning report, and the record.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-reveal style="--d:0">
+        <span class="step-n">01</span>
+        <h3>Your charter</h3>
+        <p>Before session opens we build a watch charter with you: the subjects, the
+        code sections, and the specific outcomes that matter to your members.</p>
+      </div>
+      <div class="step" data-reveal style="--d:1">
+        <span class="step-n">02</span>
+        <h3>The morning report</h3>
+        <p>During session, one plain-English report every morning: what was filed,
+        what moved, what died, and what it does to your business.</p>
+      </div>
+      <div class="step" data-reveal style="--d:2">
+        <span class="step-n">03</span>
+        <h3>The record</h3>
+        <p>Between sessions, how every member of the General Assembly has actually
+        voted on the issues you care about.</p>
+      </div>
+    </div>
+
+    <div class="tiers" style="margin-top:52px">
+      <div class="tier" data-reveal style="--d:0">
+        <h3>The Watch</h3>
+        <span class="price">$300</span>
+        <span class="per">per month</span>
+        <ul>
+          <li>Daily plain-English session reports</li>
+          <li>A watch charter built around your issues</li>
+          <li>Bill tracking with status changes flagged</li>
+        </ul>
+      </div>
+      <div class="tier" data-reveal style="--d:1">
+        <h3>The Voice</h3>
+        <span class="price">$500</span>
+        <span class="per">per month</span>
+        <ul>
+          <li>Everything in The Watch</li>
+          <li>One-click emails from your members to their own legislators</li>
+          <li>No per-message platform fees</li>
+        </ul>
+      </div>
+      <div class="tier feature" data-reveal style="--d:2">
+        <h3>The Full Desk</h3>
+        <span class="price">$1,500</span>
+        <span class="per">per month</span>
+        <ul>
+          <li>Everything in The Voice</li>
+          <li>A custom legislator scorecard for your issues, included with an annual subscription</li>
+          <li>Committee and member research on request</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:26px" data-reveal><a href="pricing.html">See what is in each tier.</a></p>
+
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Custom legislator scorecards</p>
+      <h2>Just want the grades? We build those.</h2>
+      <p>A one-time project, not a subscription. Pick the issues that define your
+      organization and we score every member of the General Assembly against their
+      actual recorded votes, in a form your members can read.</p>
+    </div>
+
+    <div class="stats" data-reveal>
+      <div class="stat"><b>$4,500</b><span>to $7,500 for a standalone custom scorecard</span></div>
+      <div class="stat"><b>Included</b><span>with an annual Full Desk subscription</span></div>
+      <div class="stat"><b>$8,000</b><span>to $30,000 is the published national rate</span></div>
+    </div>
+
+    <p style="margin-top:26px" data-reveal><a href="pricing.html">See how scorecards are built and priced.</a></p>
+  </div>
+</section>
+
+<section class="band band--dark">
+  <div class="wrap">
+    <div class="pledge-grid">
+      <div data-reveal>
+        <div class="pledge-rule"></div>
+        <p class="pledge-quote">We just provide the data. No politics, right or left.</p>
+      </div>
+      <div data-reveal style="--d:1">
+        <p class="pledge-body">We do not endorse candidates, we do not run campaigns,
+        and we do not lobby anyone. We read the record and report it. What you do with
+        it is your business.</p>
+        <p class="pledge-body">We will build the same quality of work for organizations
+        that disagree with each other, and we will not tell either one what the other
+        asked for. <a href="about.html">Read the full pledge.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <div class="cta-band" data-reveal>
+      <div>
+        <h2>Session opens January 13, 2027.</h2>
+        <p>A charter built in December means daily reports from day one.</p>
+      </div>
+      <div><a class="button button--ink" href="mailto:rich@vabillwatch.com">Get in touch
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg width="27" height="27" viewBox="0 0 28 28" aria-hidden="true">
+            <rect x="1" y="1" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="7" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <line x1="7" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M7.5 19.2 L11 22.4 L21.6 11.2" fill="none" stroke="#c8a04a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="wordmark">Virginia Bill Watch</p>
+        </a>
+        <p>One plain-English report every morning of the session, compiled from
+        the Commonwealth&rsquo;s own legislative record.</p>
+      </div>
+      <div>
+        <p class="foot-title">Pages</p>
+        <div class="foot-nav">
+          <a href="index.html">Home</a>
+          <a href="data.html">The Data</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-title">Contact</p>
+        <p><a href="mailto:rich@vabillwatch.com">rich@vabillwatch.com</a></p>
+        <p>1201 Sycamore Sq #1313<br>Midlothian, VA 23113</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Virginia Bill Watch LLC, a Virginia limited liability company.</span>
+      <span>Data from the Virginia Legislative Information System.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

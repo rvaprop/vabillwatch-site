@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Data | Virginia Bill Watch</title>
+<meta name="description" content="Where the data comes from, what we compile, and how we read what a bill actually does.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%230d1420'/%3E%3Cpath d='M7.5 14.6 L11.5 18.6 L21 8.6' fill='none' stroke='%23c8a04a' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg width="27" height="27" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <line x1="7" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="7" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M7.5 19.2 L11 22.4 L21.6 11.2" fill="none" stroke="#c8a04a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p class="wordmark">Virginia Bill Watch</p>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="data.html" aria-current="page">The Data</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html" class="nav-hide">About</a>
+      <a href="mailto:rich@vabillwatch.com" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal style="--d:0">The Data</p>
+    <h1 data-reveal style="--d:1">Where it comes from, and what we do to it.</h1>
+    <p class="lede" data-reveal style="--d:2">No scraping, no guesswork, no paid middleman. We read the Commonwealth&rsquo;s own record, compile it, and analyze it at a depth that is not possible by hand.</p>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <div class="prose narrow" data-reveal>
+      <h2>The source</h2>
+      <p>Everything we publish comes from the Virginia Legislative Information System,
+      the official feed that runs the General Assembly&rsquo;s own public website. It carries
+      every bill, its patrons, its status, and every recorded vote with each
+      legislator&rsquo;s individual yes or no. During session the state updates it daily.</p>
+      <p>We do not use a commercial bill-tracking vendor and we do not resell one. The
+      access is free to anyone. The work is in the compiling, the reading, and the
+      analysis: seeing the deep connections in the record that no one could hold in
+      their head.</p>
+      <p>That analysis is the part that was not possible until now. We put AI across
+      the entire record at once, on every axis we can define: a member&rsquo;s committee
+      votes against their floor votes, what they sponsor against what they let die,
+      what a bill&rsquo;s title claims against what its text actually does, how a seat has
+      voted across four sessions even when the member in it changed. One question can
+      cross 1,612,543 individual votes. No one reads that by hand.</p>
+    </div>
+
+    <div class="stats" style="margin-top:44px" data-reveal>
+      <div class="stat"><b data-count="4">4</b><span>sessions compiled: 2023, 2024, 2025, 2026</span></div>
+      <div class="stat"><b data-count="31398">31,398</b><span>recorded votes on bills</span></div>
+      <div class="stat"><b data-count="1612543">1,612,543</b><span>individual legislator votes</span></div>
+      <div class="stat"><b data-count="221">221</b><span>legislators with a voting record on file</span></div>
+    </div>
+
+    <div class="prose narrow" style="margin-top:34px" data-reveal>
+      <p>That is 158 delegates and 63 senators, including everyone who has since left
+      office. When a member is new, we can still tell you how the seat has voted. When
+      a member is not new, we can tell you exactly what they have done for four years.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--panel">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">How we read a bill</p>
+      <h2>A bill&rsquo;s title routinely says the opposite of what the bill does.</h2>
+    </div>
+
+    <div class="prose narrow" data-reveal>
+      <p>This is not an accident of drafting, and it is the single most expensive
+      mistake in this work. A bill titled &ldquo;limitations on fees&rdquo; can raise the cap. A
+      bill titled &ldquo;registration requirements&rdquo; can repeal them.</p>
+
+      <p>So we do not score titles. We read the state&rsquo;s own summary and, where that is
+      not enough, the bill text, and we record what the bill would actually do. When
+      the record is genuinely unclear we mark it unclear rather than guess. Every
+      number we put in front of a client is read back against the live source before
+      it ships.</p>
+    </div>
+
+    <div class="ledger" style="margin-top:34px" data-reveal>
+      <div class="ledger-head">
+        <strong>Worked example: HB978 (2026)</strong>
+        <span>&ldquo;Retail Sales and Use Tax; taxation on various services&rdquo;</span>
+      </div>
+      <div class="lrow lrow--novote">
+        <span class="l-date">Feb 9</span>
+        <span class="l-where">House Finance Subcommittee #3</span>
+        <span class="l-what">Recommends continuing the bill</span>
+      </div>
+      <div class="lrow lrow--novote is-decisive">
+        <span class="l-date">Feb 11</span>
+        <span class="l-where">House Finance <span class="l-flag">Still alive</span></span>
+        <span class="l-what">Continued to the next session</span>
+      </div>
+      <p class="ledger-note">Read the headlines and this bill died. Read the record and it
+      did not. &ldquo;Continued to next session&rdquo; means it is alive and returns in 2027
+      with its committee history intact. Its companion, HB900, is carried over too.
+      A tracker that reports bills as passed or failed would have told you the wrong
+      thing about both. Chief patrons: Vivian E. Watts (HB978), Richard C. Sullivan, Jr. (HB900).</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">What lands in your inbox</p>
+      <h2>One report every morning of the session, in plain English.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-reveal style="--d:0">
+        <span class="step-n">01</span>
+        <h3>What was filed</h3>
+        <p>What was filed yesterday that touches your issues, and what it would do.</p>
+      </div>
+      <div class="step" data-reveal style="--d:1">
+        <span class="step-n">02</span>
+        <h3>What moved</h3>
+        <p>What moved, in which room, and on what vote. What died, and what only
+        looks dead.</p>
+      </div>
+      <div class="step" data-reveal style="--d:2">
+        <span class="step-n">03</span>
+        <h3>What is next</h3>
+        <p>What is scheduled next, while there is still time to do something.</p>
+      </div>
+    </div>
+
+    <div class="prose narrow" style="margin-top:44px" data-reveal>
+      <p>Between sessions, the record: the full voting history of every member on the
+      issues in your charter, and the carryover bills coming back.</p>
+
+      <h2>Your charter</h2>
+      <p>Before the session opens we build a watch charter with you: the subjects, the
+      code sections, and the specific outcomes that matter to your members. That
+      charter is what the daily report is filtered against, and it is yours. It gets
+      revised as your priorities change.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <div class="cta-band" data-reveal>
+      <div>
+        <h2>Session opens January 13, 2027.</h2>
+        <p>Charters are built in December.</p>
+      </div>
+      <div><a class="button button--ink" href="mailto:rich@vabillwatch.com">Get in touch
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html">
+      <svg width="27" height="27" viewBox="0 0 28 28" aria-hidden="true">
+        <rect x="1" y="1" width="26" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <line x1="7" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="7" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M7.5 19.2 L11 22.4 L21.6 11.2" fill="none" stroke="#c8a04a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+          <p class="wordmark">Virginia Bill Watch</p>
+        </a>
+        <p>One plain-English report every morning of the session, compiled from
+        the Commonwealth&rsquo;s own legislative record.</p>
+      </div>
+      <div>
+        <p class="foot-title">Pages</p>
+        <div class="foot-nav">
+          <a href="index.html">Home</a>
+          <a href="data.html">The Data</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-title">Contact</p>
+        <p><a href="mailto:rich@vabillwatch.com">rich@vabillwatch.com</a></p>
+        <p>1201 Sycamore Sq #1313<br>Midlothian, VA 23113</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Virginia Bill Watch LLC, a Virginia limited liability company.</span>
+      <span>Data from the Virginia Legislative Information System.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

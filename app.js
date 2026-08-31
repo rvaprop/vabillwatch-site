@@ -118,3 +118,55 @@
     timer = setInterval(tick, 1000);
   }
 })();
+
+/* ---- outreach measurement ------------------------------------------------
+   Someone we emailed arrives with a six character code on the URL. We note
+   that the code was here, and on which page, and nothing else. No cookie, no
+   third party, no profile, no identifier of our own creation: the code is
+   one we already had, because we wrote it into that person's email. If the
+   code is absent or malformed, this block does nothing at all.            */
+(function () {
+  var ENDPOINT = 'https://richs-mac-mini.tailf30f0b.ts.net/v';
+  var VALID = /^[0-9a-f]{6}$/;
+
+  function remembered() {
+    var q = null;
+    try { q = new URLSearchParams(window.location.search).get('v'); } catch (e) {}
+    if (q && VALID.test(q)) {
+      try { sessionStorage.setItem('bwv', q); } catch (e) {}
+      return q;
+    }
+    try {
+      var s = sessionStorage.getItem('bwv');
+      if (s && VALID.test(s)) return s;
+    } catch (e) {}
+    return null;
+  }
+
+  function note(code, page) {
+    try {
+      var i = new Image();
+      i.src = ENDPOINT + '?c=' + encodeURIComponent(code)
+            + '&p=' + encodeURIComponent(page)
+            + '&t=' + Date.now();
+    } catch (e) {}
+  }
+
+  var code = remembered();
+  if (!code) return;
+
+  note(code, window.location.pathname || '/');
+
+  /* The booking buttons are the click that actually matters. Note it before
+     the browser leaves, and carry the code across so the booking page knows
+     which conversation it belongs to. */
+  var links = document.querySelectorAll('a[href*="/meet/book/"]');
+  Array.prototype.forEach.call(links, function (a) {
+    try {
+      var u = new URL(a.href, window.location.href);
+      u.searchParams.set('v', code);
+      a.href = u.toString();
+    } catch (e) {}
+    a.addEventListener('click', function () { note(code, '/meet/book'); });
+  });
+})();

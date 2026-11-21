@@ -15,7 +15,8 @@
 <p id="go"></p>
 <script>
   var u = "https://richs-mac-mini.tailf30f0b.ts.net/voice/" + location.search;
-  document.getElementById("go").innerHTML = 'If nothing happens, <a href="' + u.replace(/"/g, "") + '">tap here</a>.';
+  var a = document.createElement("a"); a.href = u; a.textContent = "tap here";
+  var g = document.getElementById("go"); g.append("If nothing happens, ", a, ".");
 </script>
 </body>
 </html>

@@ -16,7 +16,7 @@
 <h1 style="font-size:24px;line-height:1.25">The sign-up page is down for a few minutes.</h1>
 <p>Please try this same link again a little later.</p>
 <p>If it still does not open, email <a href="mailto:rich@vabillwatch.com">rich@vabillwatch.com</a> and we will help.</p>
-<p><a id="retry" href="">Try again now</a></p>
+<p><a id="retry" href="">Try again now</a> &middot; <a id="anyway" href="">Open the sign-up page anyway</a></p>
 </div>
 <script>
   var BASE = "https://richs-mac-mini.tailf30f0b.ts.net/voice/";
@@ -24,6 +24,7 @@
   var a = document.createElement("a"); a.href = u; a.textContent = "tap here";
   document.getElementById("go").append("If nothing happens, ", a, ".");
   document.getElementById("retry").href = location.href;
+  document.getElementById("anyway").href = u;
   function go(){ location.replace(u); }
   function down(){ document.getElementById("wait").className = "hide"; document.getElementById("down").className = ""; }
   if (!window.fetch) { go(); }

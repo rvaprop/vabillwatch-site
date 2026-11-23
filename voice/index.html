@@ -5,18 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sign up | Virginia Bill Watch</title>
 <meta name="robots" content="noindex">
-<script>
-  location.replace("https://richs-mac-mini.tailf30f0b.ts.net/voice/" + location.search + location.hash);
-</script>
-<style>body{font:17px/1.5 system-ui,sans-serif;max-width:32rem;margin:15vh auto;padding:0 16px;color:#0d1420}a{color:#0d1420}</style>
+<style>body{font:17px/1.5 system-ui,sans-serif;max-width:32rem;margin:15vh auto;padding:0 16px;color:#0d1420}a{color:#0d1420}.hide{display:none}</style>
 </head>
 <body>
+<div id="wait">
 <p>Opening the sign-up page...</p>
 <p id="go"></p>
+</div>
+<div id="down" class="hide">
+<h1 style="font-size:24px;line-height:1.25">The sign-up page is down for a few minutes.</h1>
+<p>Please try this same link again a little later.</p>
+<p>If it still does not open, email <a href="mailto:rich@vabillwatch.com">rich@vabillwatch.com</a> and we will help.</p>
+<p><a id="retry" href="">Try again now</a></p>
+</div>
 <script>
-  var u = "https://richs-mac-mini.tailf30f0b.ts.net/voice/" + location.search;
+  var BASE = "https://richs-mac-mini.tailf30f0b.ts.net/voice/";
+  var u = BASE + location.search + location.hash;
   var a = document.createElement("a"); a.href = u; a.textContent = "tap here";
-  var g = document.getElementById("go"); g.append("If nothing happens, ", a, ".");
+  document.getElementById("go").append("If nothing happens, ", a, ".");
+  document.getElementById("retry").href = location.href;
+  function go(){ location.replace(u); }
+  function down(){ document.getElementById("wait").className = "hide"; document.getElementById("down").className = ""; }
+  if (!window.fetch) { go(); }
+  else {
+    var done = false;
+    var t = setTimeout(function(){ if (!done) { done = true; down(); } }, 10000);
+    fetch(BASE + "healthz", {cache: "no-store"}).then(function(r){ return r.ok ? r.text() : ""; })
+      .then(function(x){ if (done) return; done = true; clearTimeout(t); if (x.trim() === "ok") go(); else down(); })
+      .catch(function(){ if (done) return; done = true; clearTimeout(t); down(); });
+  }
 </script>
 </body>
 </html>
